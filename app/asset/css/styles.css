@@ -1,0 +1,44 @@
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.hero{
+	background-image: url(../img/portrait_1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    margin: 0 auto;
+    width: 100%;
+    height: 1200px;
+    background-size: cover;
+      position: relative;
+}
+
+h1{
+	font-family: didot;
+}
+
+.info{
+	margin-right: 50px;
+}
+.logo {
+	margin-top: 50px;
+	margin-bottom: 400px;
+} 
+
+.lead-form{
+	width:500px;
+	height: 1200px;
+	/*margin-top: 400px;*/
+	position: absolute;
+    right: 0px;
+    padding: 10px;
+}
+
+
+
+
+
+/*SPROUT STUFF*/
