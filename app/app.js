@@ -25,4 +25,3 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider){
 
 });
 
-// app.config(function($httpProvider, $urlRouterProvider, $stateProvider){
