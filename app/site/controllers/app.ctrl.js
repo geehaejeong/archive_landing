@@ -13,6 +13,8 @@
 		ctrl.homeBtn = homeBtn;
 		ctrl.instagram = instagram();
 
+		ctrl.submitBtn = "Submit";
+
 		// var endpoint = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=439034.b9afd9e.9ff88211d74743b28ddce2ea0229e04b';
 
 		function formBtn(){
@@ -25,15 +27,51 @@
 			$state.go('home');
 		}
 
-		function instagram(){
-			$http.jsonp('https://api.instagram.com/v1/users/self/media/recent/?access_token=439034.b9afd9e.9ff88211d74743b28ddce2ea0229e04b')
-			.success(function(res){
-				console.log(res.data);
-				ctrl.instagram = res.data.image.standard_resolution.url;
-			});
+		// function instagram(){
+		// 	ctrl.$http.get('https://api.instagram.com/v1/users/self/media/recent/?access_token=439034.b9afd9e.9ff88211d74743b28ddce2ea0229e04b')
+		// 	.success(function(res){
+		// 		console.log(res.data);
+		// 		ctrl.instagram = res.data.image.standard_resolution.url;
+		// 	});
 
+
+		function newForm(){
+			var formData = {
+				FirstName	: ctrl.firstName,
+				LastName	: ctrl.lastName,
+				Email		: ctrl.email,
+				Phone		: ctrl.phone,
+				PhoneType	: ,
+				
+
+			}
 		}
 
+		function submitTave(){
+			ctrl.$http.post('https://tave.com/app/webservice/create-lead/d7cXdrT2', formData);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
 	};
 

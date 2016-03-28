@@ -4,16 +4,40 @@ body{
 	padding: 0;
 }
 
-.hero{
-	background-image: url(../img/portrait_1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
+.hero-header{
+	background-image: url(../img/sarah-jack-26.jpg);
+    background-position: top center;
     margin: 0 auto;
     width: 100%;
-    height: 1200px;
+    height: 500px;
     background-size: cover;
-     position: relative;
+    position: relative;
+    text-align: center;
+}
+.hero-title{
+	width: 400px;
+	margin: 20px;
+	background-color: white;
+	margin: 0 auto;
+	opacity: 0.5;
+}
+
+.table-view{
+  display:table;
+  height:100%;
+  width:100%;
+}
+
+.table-cell{
+    display: table-cell;
+    width:100%;
+    height:100%;
+    vertical-align: middle;
+}
+
+.form-div{
+	width: 500px;
+	margin: 0 auto;
 }
 
 h1{
@@ -21,34 +45,24 @@ h1{
 }
 
 .info{
-	margin-right: 50px;
-}
-.logo {
-	margin-top: 50px;
-	margin-bottom: 400px;
-} 
-
-
-
-/*.lead-form{
-	width:500px;
-	height: 1200px;
-	margin-top: 400px;
-	position: absolute;
-    right: 0px;
-    padding: 10px;
-}*/
-
-
-
-
-
-/*LEAD-FORM*/
-.lead-form{
-	width: 600px;
+	max-width: 70%;
 	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	/*text-align: center;*/
 }
-img {
-	margin-top: 50px;
-	margin: 0 auto;
-} 
+address{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.hero-footer{
+	background-image: url(../img/portrait_1.jpg);
+    background-position: top center;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
