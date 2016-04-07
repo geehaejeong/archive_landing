@@ -10,20 +10,21 @@
 				</div>
 			</div>
 		</div>
+		<div class="slash-footer"></div>
 	</div>
 
 	<div class="container">
 		<div class="info">
 			<div class="paragraph">
-				<h2><strong><center>We Take Portraits Seriously.</center></strong></h2>
+				<h1><strong><center>We Take Portraits Seriously.</center></strong></h1>
 				<br>
-				<p><center>
-					We like to keep things simple here at Archive Studio. We believe in and value family and archiving that journey with timeless portraiture. In this modern and fast paced world it’s easy for moments and milestones to slip through the cracks of our busy schedules. Yes, most of us carry our phones with awesome cameras in our pockets. But how many of those photos get printed into a book or enlarged for the family room? We are here to make family portraits fun and easy.
-				</center></p>
+				<h5><center>
+					We like to keep things simple here at <strong>Archive Studio</strong>. We believe in the value of archiving the journey of you and your family with timeless portraiture. In this modern and fast paced world, it’s easy for moments and milestones to slip through the cracks of our busy schedules. Yes, most of us carry our phones with awesome cameras in our pockets, but how many of those photos get printed into a book or enlarged for the family room? We are here to make your family portrait experience fun and easy.
+				</center></h5>
 			</div>
 
 			<div class="paragraph">
-				<p><strong>A message from gee:</strong></p>
+				<p><strong>A message from the founder:</strong></p>
 				<p>
 				I remember when I was young my parents would drag us to the local studio to get our family portraits done. At the time I found it totally tedious and boring. I didn’t see the point really. But today I look back at those photos and look at that yellow sweater I wore with my hair done a certain way and the memories flood in. The yellow sweater was my favourite to wear and my hair was done that certain way because I liked how it flattered my heart shaped face. When I look at that photo I’m suddenly 10 years old again and I remember how we were still living under one roof with my brothers room just a door down instead of at opposite ends of the globe. I totally get the warm fuzzies.
 				<br>
@@ -37,7 +38,7 @@
 		</div>
 	</div>
 
-	
+
 
 	<iframe height='800px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='http://tave.com/archivestudio-inline/'></iframe>
 
@@ -48,10 +49,18 @@
 
 	<div class="hero-footer">
 	</div>
+	<div class="slash-footer"></div>
+<section class="footer">
+	<div class="row instagram">
+		<div class="col-xs-6 col-sm-4 col-md-3 nopadding" 
+		ng-repeat="insta in ctrl.instagramImg
+		| limitTo: 8 ">
 
+			<img ng-src="{{insta.images.standard_resolution.url}}">
+		</div>
+	</div>
 
-
-
+</section>	
 
 
 

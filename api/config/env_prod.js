@@ -1,1 +1,1 @@
-module.exports = {port:80,host:'http://52.26.168.80'};
+module.exports = {port:80,host:'http://54.191.146.253'};
