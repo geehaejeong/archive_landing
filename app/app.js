@@ -2,12 +2,11 @@
 
 var app = angular.module('myApp',['ui.router']);
 
-app.config(function($httpProvider, $urlRouterProvider, $stateProvider){
+app.config(function($httpProvider, $urlRouterProvider, $stateProvider, $locationProvider){
 
 	$urlRouterProvider.otherwise('/home');
 
 	$stateProvider
-
 	.state('home',{
 		url: '/',
 		templateUrl: 'site/partials/home.html',
@@ -21,7 +20,7 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider){
 	})
 
  
-
+	$locationProvider.html5Mode(true);
 
 });
 
