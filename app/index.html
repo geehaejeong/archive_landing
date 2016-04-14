@@ -22,7 +22,48 @@
 
 </head>
 
+
+
+<section class="header grey-background" ng-controller="AppCtrl as ctrl">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="header-left">
+				<h5>A TORONTO PORTRAIT STUDIO</h5>
+				<h2>{{ ctrl.today | uppercase }}</h2>
+				
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="header-right">
+				<ul>
+					<li><a ng-click="ctrl.homeBtn()">HOME</a></li>
+					<li><a ng-click="ctrl.formBtn()">INQUIRE</a></li>
+					<li><a ng-click="ctrl.momsBabesBtn()">MOMS & BABES</a></li>
+					<li>ABOUT</li>
+				</ul>
+				<p>"some sort of quote here"</p>
+			</div>	
+		</div>
+	</div>
+
+
+</section>
+
+<div class="header-logo" ng-click="ctrl.homeBtn()" ng-controller="AppCtrl as ctrl"><h1>ARCHIVE STUDIO</h1></div>
+
 <body ng-app="myApp">
 <div ui-view></div>
+
+<section class="footer grey-background">
+	<ul>
+		<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span></li>
+		<li>ABOUT</li>
+		<li>INQUIRE</li>
+		<li>MOMS & BABES</li>
+	</ul>
+		<hr>
+		<p>All rights reserved © ARCHIVE STUDIO 2016 · Design & Development by Gee
+</section>
+
 </body>
 </html>

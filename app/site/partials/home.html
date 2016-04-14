@@ -1,69 +1,65 @@
 
+
+
 	<div class="row">
-		<div class="hero-header">
-			<div class="table-view">
-				<div class="table-cell">
-						<!-- <h1 class="hero-title">ARCHIVE STUDIO</h1> -->
-					<div class="logo">
-					<img src="assets/img/archive_logo_a.jpg" style="width: 100px; opacity: 0.8;">
+		<div class="hero-header"></div>
+	</div>
+
+
+<section class="content">
+	<div class="mid-content">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="content-left">
+					<table class="table">
+						<tr>
+							<td>Portrait Session</td>
+							<td>$150</td>
+						</tr>
+						<tr>
+							<td>Family Session</td>
+							<td>$250</td>
+						</tr>
+						<tr>
+							<td>Kid Session</td>
+							<td>$150</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<button class="btn btn-default" ng-click="ctrl.formBtn()">INQUIRE</button>
 				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="content-right">
+					<h3>We Take Portraits Seriously.</h3>
+					<br>
+					In this modern and fast paced world, it's easy for moments and milestones to slip through the cracks of our busy schedules. Here at Archive Studios, we believe in the value of archiving you and your family's journey with timeless portraiture. Most of us carry phones with amazing cameras in our pockets, but how many of those photos get printed into a book or enlarged for the family room? We want to make your family portrait a fun and easy experience to remember for many years to come.
 				</div>
 			</div>
 		</div>
-		<div class="slash-footer"></div>
+
 	</div>
-
-	<div class="container">
-		<div class="info">
-			<div class="paragraph">
-				<h1><strong><center>We Take Portraits Seriously.</center></strong></h1>
-				<br>
-				<h5><center>
-					We like to keep things simple here at <strong>Archive Studio</strong>. We believe in the value of archiving the journey of you and your family with timeless portraiture. In this modern and fast paced world, it’s easy for moments and milestones to slip through the cracks of our busy schedules. Yes, most of us carry our phones with awesome cameras in our pockets, but how many of those photos get printed into a book or enlarged for the family room? We are here to make your family portrait experience fun and easy.
-				</center></h5>
-			</div>
-
-			<div class="paragraph">
-				<p><strong>A message from the founder:</strong></p>
-				<p>
-				I remember when I was young my parents would drag us to the local studio to get our family portraits done. At the time I found it totally tedious and boring. I didn’t see the point really. But today I look back at those photos and look at that yellow sweater I wore with my hair done a certain way and the memories flood in. The yellow sweater was my favourite to wear and my hair was done that certain way because I liked how it flattered my heart shaped face. When I look at that photo I’m suddenly 10 years old again and I remember how we were still living under one roof with my brothers room just a door down instead of at opposite ends of the globe. I totally get the warm fuzzies.
-				<br>
-				Those memories are what sparked my desire to open a space where families could come in to archive their life at that moment in time. As much as these photos are great to look at now, we are more excited about the thought of your children looking through these photos when they are your age!
-				</p>
-			</div>
-
-			<div class="paragraph">
-				<p><em><center>For a limited time family portraits begin at $250.<br>Please fill out the form below for all inquires. For general questions please <a href="mailto:info@archivestudio.io">email</a> us.</center></em></p>
-			</div>
-		</div>
-	</div>
+</section>
 
 
-
-	<iframe height='800px' width='100%' frameborder='0' allowTransparency='true' scrolling='auto' src='http://tave.com/archivestudio-inline/'></iframe>
-
-	<address>
-	<a href="mailto:info@archivestudio.io">info@archivestudio.io</a>. | 4485 Chesswood Dr, North York, ON M3J 2C3
-	</address>
-
-
-	<div class="hero-footer">
-	</div>
-	<div class="slash-footer"></div>
 <section class="footer">
-	<div class="row instagram">
-		<div class="col-xs-6 col-sm-4 col-md-3 nopadding" 
-		ng-repeat="insta in ctrl.instagramImg
-		| limitTo: 8 ">
+	<div class="row">
+		<div class="instagram">
+		<a href="https://www.instagram.com/archive_studio/" target="_blank"><h4>@ARCHIVE_STUDIO</h4></a>
+			<div class="col-xs-6 col-sm-3 col-md-3 nopadding" 
+			ng-repeat="insta in ctrl.instagramImg
+			| limitTo: 4 ">
 
-			<img ng-src="{{insta.images.standard_resolution.url}}">
+				<img ng-src="{{insta.images.standard_resolution.url}}">
+			</div>
 		</div>
 	</div>
 
 </section>	
-
-
-
 
 
 

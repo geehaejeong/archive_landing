@@ -8,28 +8,40 @@
 
 
 
-	function AppCtrl($state, $http){
+	function AppCtrl($state, $http, $filter){
 		var ctrl = this;
 		ctrl.$http = $http;
 
 		ctrl.formBtn = formBtn;
 		ctrl.homeBtn = homeBtn;
-		ctrl.submitBtn = "Submit";
+		ctrl.momsBabesBtn = momsBabesBtn;
+
 		ctrl.instagram = instagram;
+		ctrl.todaysDate = todaysDate;
+		ctrl.hello = "hello";
 
-		var endpoint = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=3047809982.c916a8f.c652358bace74d41acbe9715263f440a&callback=JSON_CALLBACK';
+	
 
+		function todaysDate(){
+			ctrl.date = new Date();
+			ctrl.today = $filter('date')(new Date(), 'MMM/dd');
+		}
+		ctrl.todaysDate();
+
+
+		// BUTTONS
 		function formBtn(){
-			console.log('button');
 			$state.go('form');
 		}
-
 		function homeBtn(){
-			console.log('button');
 			$state.go('home');
 		}
+		function momsBabesBtn(){
+			$state.go('momsandbabes');
+		}
 
-
+		// INSTAGRAM
+		var endpoint = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=3047809982.c916a8f.c652358bace74d41acbe9715263f440a&callback=JSON_CALLBACK';
 		function instagram(){
 			ctrl.$http.jsonp(endpoint).
 			success(function(res){

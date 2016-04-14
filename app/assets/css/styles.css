@@ -3,6 +3,49 @@ body{
 	margin: 0;
 	padding: 0;
 }
+html hr{
+    border-top: 1px solid #6e6a67;
+    opacity: 0.5;
+}
+
+
+/*HEADER*/
+
+.header{
+    padding: 30px;
+
+}
+.header-left{
+    height: 170px;
+    position: relative;
+}
+.header-left h3{
+    margin-bottom: 120px;
+}
+.header-left h2{
+    position: absolute;
+    bottom: 10px;
+}
+.header-right ul{
+    padding-top: 10px;
+    list-style: none;
+    text-align: right;
+    font-size: 20px;
+    font-family: didot;
+}
+.header-right{
+    padding-top: 10px;
+    text-align: right;
+}
+.header-logo{
+    text-align: center;
+    font-size: 50px;
+    font-family: didot;
+    margin: 50px 0;
+}
+.header-logo h1{
+    font-size: 70px;
+}
 
 .hero-header{
 	background-image: url(../img/jenn_dk-17.jpg);
@@ -14,77 +57,79 @@ body{
     position: relative;
     text-align: center;
 }
-.hero-title{
-	width: 400px;
-	margin: 20px;
-	background-color: white;
-	margin: 0 auto;
-	opacity: 0.5;
-}
 
-.table-view{
-  display:table;
-  height:100%;
-  width:100%;
-}
+/*FONTS*/
+body h1 {font-family: didot;}
+body h2 {font-family: proxima-nova;}
+body h3 {font-family: didot;}
+body h4 {font-family: avenir;}
 
-.table-cell{
-    display: table-cell;
-    width:100%;
-    height:100%;
-    vertical-align: middle;
+/*LINKS*/
+html a{
+    color: #6e6a67;
+    cursor: pointer;
 }
-
-.form-div{
-	width: 500px;
-	margin: 0 auto;
-}
-
-h1{
-	font-family: proxima-nova;
+html a:hover, html a:visited{
+    text-decoration: none;
+    color: #6e6a67;
 }
 
 
-.info{
-	max-width: 70%;
-	margin: 0 auto;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	/*text-align: center;*/
-}
-.paragraph{
-	margin-top: 100px;
-}
 
-address{
-	text-align: center;
-	margin-bottom: 50px;
+/*MID CONTENT*/
+.content{
+    margin: 50px 0;
 }
-
-/*FOOTER*/
-
-.hero-footer{
-	background-image: url(../img/katie.jpg);
-    background-position: top center;
+.mid-content{
+    padding: 40px;
     margin: 0 auto;
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    position: relative;
-    text-align: center;
+    width: 90%;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #6e6a67;
 }
+.content-left{
+    margin: 0 auto;
+    padding: 20px;
+}
+.table{
+    margin-top: 50px;
+}
+.content-right{
+    padding: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
 /*DECORATIVES*/
 .slash-footer {
     height: 25px;
     background: url(../img/slash.png);
 }
+.grey-background {
+    background: url(../img/grey-cube.jpg);
+}
 
 
 
 /*INSTAGRAM*/
-
+.instagram{
+    width: 900px;
+    margin: 0 auto;
+}
 .instagram img{
 	width: 100%;
+    margin-bottom: 60px;
+    padding: 2px;
 }
 
 /*BOOTSTRAP ADJUSTMENTS*/
@@ -92,3 +137,52 @@ address{
    padding: 0 !important;
    margin: 0 !important;
 }
+
+
+
+/*PARTIALS*/
+
+.form-blurb{
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+}
+
+/*MOMS AND BABES*/
+.featured-image{
+    background-position: top center;
+    margin: 0 auto;
+    padding: 30px;
+    border: solid;
+    width: 70%;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-image: url(/assets/img/momsbabes/sarah-jack.jpg);
+}
+
+
+/*FOOTER*/
+.footer{
+    padding: 15px 50px 10px 50px;
+}
+
+address{
+    text-align: center;
+    margin: 50px;
+}
+.footer p{
+    text-align: right;
+    color: darkgrey;
+    font-size: 8px;
+    margin-top: 80px;
+}
+.footer ul li{
+    display: inline;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+

@@ -18,9 +18,14 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider, $location
 		templateUrl: 'site/partials/form.html',
 		controller: 'AppCtrl as ctrl'
 	})
+	.state('momsandbabes',{
+		url: '/momsandbabes',
+		templateUrl: 'site/partials/momsbabes.html',
+		controller: 'AppCtrl as ctrl'
+	})
 
  
-	$locationProvider.html5Mode(true);
+	// $locationProvider.html5Mode(true);
 
 });
 
