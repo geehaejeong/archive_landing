@@ -50,18 +50,18 @@
 				for (var i = 0 ; i < 8 ; i++ ){
 					ctrl.instagramImg.push(res.data[i]);
 				}
-
-			console.log(ctrl.instagramImg);
 			});
 		}
 		ctrl.instagram();
 		
-		ctrl.object = [{name: 'gee', age:2},{name:'ron', age:3}];
-		console.log(ctrl.object);
+
+
+
+
+
+
+		
 	};
-
-	
-
 })();
 
       

@@ -18,6 +18,11 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider, $location
 		templateUrl: 'site/partials/form.html',
 		controller: 'AppCtrl as ctrl'
 	})
+	.state('blog',{
+		url: '/blog',
+		templateUrl: 'site/partials/blog.html',
+		controller: 'BlogCtrl as ctrl'
+	})
 	.state('momsandbabes',{
 		url: '/momsandbabes',
 		templateUrl: 'site/partials/momsbabes.html',

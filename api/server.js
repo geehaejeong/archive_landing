@@ -1,4 +1,11 @@
-//
+var express  	= require('express');
+var app 		= express();
+var https 		= require('https');
+var bodyParser 	= require('body-parser');
+
+
+
+
 try{
 	var env = require('./config/env_dev');
 }
@@ -6,10 +13,6 @@ catch(err){
 	var env = require('./config/env_prod');
 }
 
-var express  	= require('express');
-var app 		= express();
-var https = require('https');
-var bodyParser 	= require('body-parser');
 
 app.use(express.static(__dirname + './../app'));
 app.listen(env.port,function(){
@@ -19,27 +22,21 @@ app.listen(env.port,function(){
 
 
 
-// var domain = 'https://api.instagram.com/'
-// var token = '3047809982.c916a8f.c652358bace74d41acbe9715263f440a';
-// ​
-// app.get('/', function(req, __res) {
-//   var search = req.params.hashtag;
-//   https.get(domain + 'v1/users/self/media/recent/?access_token=' + token, function(res) {
-//       var body ='';
-//       res.on('data', function(data) {
-//         body += data;
-//       });
-// ​
-//       res.on('end', function() {
-//         var response = JSON.parse(body);
-//         var imageUrls = response.data.map(function (row) {
-//           return row.images.standard_resolution.url;
-//       });
-//         __res.send(imageUrls)
-//       })
-//   }).on('error', function(err) {
-//     console.log(err);
-//   })
-// });
+
+
+// Authenticate via API Key
+var tumblr = require('tumblr.js');
+var client = tumblr.createClient({ consumer_key: 'soQA0paoq80ace0dCCDEa2rmk0b6QOlYDUshtNWqwv52LjsW6e' });
+
+// Make the request
+
+
+app.get('/blog', function(req, res){
+	client.posts('archive-studio-blog.tumblr.com', function (err, resp) {
+		console.log(resp.posts[0].caption);
+		var getPosts = resp.posts;
+	});
+
+})
 
 

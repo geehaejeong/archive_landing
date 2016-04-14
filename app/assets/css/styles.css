@@ -1,13 +1,30 @@
-body{
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
+
 html hr{
     border-top: 1px solid #6e6a67;
     opacity: 0.5;
 }
 
+
+
+/*FONTS*/
+body h1 {font-family: didot;}
+body h2 {font-family: proxima-nova;}
+body h3 {font-family: didot;}
+body h4 {font-family: avenir;}
+quote {
+    font-size: 12px;
+    font-style: italic;
+}
+
+/*LINKS*/
+html a{
+    color: #6e6a67;
+    cursor: pointer;
+}
+html a:hover, html a:visited{
+    text-decoration: none;
+    color: #6e6a67;
+}
 
 /*HEADER*/
 
@@ -48,7 +65,7 @@ html hr{
 }
 
 .hero-header{
-	background-image: url(../img/jenn_dk-17.jpg);
+    background-image: url(../img/jenn_dk-17.jpg);
     background-position: top center;
     margin: 0 auto;
     width: 100%;
@@ -57,23 +74,15 @@ html hr{
     position: relative;
     text-align: center;
 }
-
-/*FONTS*/
-body h1 {font-family: didot;}
-body h2 {font-family: proxima-nova;}
-body h3 {font-family: didot;}
-body h4 {font-family: avenir;}
-
-/*LINKS*/
-html a{
-    color: #6e6a67;
-    cursor: pointer;
+.header-quote{
+    padding: 18px 10px 0 10px;
 }
-html a:hover, html a:visited{
-    text-decoration: none;
-    color: #6e6a67;
+.header-quote ul li {
+    display: inline;
+    margin-right: 7px;
+    font-size: 24px;
+    float: right;
 }
-
 
 
 /*MID CONTENT*/
@@ -149,17 +158,22 @@ html a:hover, html a:visited{
 }
 
 /*MOMS AND BABES*/
+.momsandbabes{
+    width: 900px;
+    margin: 0 auto;
+}
+
 .featured-image{
     background-position: top center;
     margin: 0 auto;
     padding: 30px;
-    border: solid;
-    width: 70%;
-    height: 500px;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    background-image: url(/assets/img/momsbabes/sarah-jack.jpg);
+    /*background-image: url(/assets/img/momsbabes/sarah-jack.jpg);*/
+}
+.featured-image img{
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    /*border: solid 1px;*/
 }
 
 
