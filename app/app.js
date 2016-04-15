@@ -8,7 +8,7 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider, $location
 
 	$stateProvider
 	.state('home',{
-		url: '/',
+		url: '/home',
 		templateUrl: 'site/partials/home.html',
 		controller: 'AppCtrl as ctrl'
 		
