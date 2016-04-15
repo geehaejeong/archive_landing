@@ -157,24 +157,27 @@ html a:hover, html a:visited{
     width: 600px;
 }
 
+
+
+
+
 /*MOMS AND BABES*/
+
 .momsandbabes{
     width: 900px;
     margin: 0 auto;
+    margin-bottom: 100px;
+}
+.schedule th, td{
+    text-align: center;
 }
 
-.featured-image{
-    background-position: top center;
-    margin: 0 auto;
-    padding: 30px;
-    /*background-image: url(/assets/img/momsbabes/sarah-jack.jpg);*/
-}
-.featured-image img{
-    width: 80%;
-    height: 100%;
-    padding: 20px;
-    /*border: solid 1px;*/
-}
+
+
+
+
+
+
 
 
 /*FOOTER*/
@@ -183,7 +186,7 @@ html a:hover, html a:visited{
 }
 
 address{
-    text-align: center;
+    float: right;
     margin: 50px;
 }
 .footer p{

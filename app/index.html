@@ -39,8 +39,7 @@
 				<ul>
 					<li><a ng-click="ctrl.homeBtn()">HOME</a></li>
 					<li><a ng-click="ctrl.formBtn()">INQUIRE</a></li>
-					<li><a ng-click="ctrl.blogBtn()"><a ng-click="ctrl.momsBabesBtn()">MOMS & BABES</a></li>
-					<li>BLOG</li>
+					<li><a ng-click="ctrl.momsBabesBtn()">MOMS & BABES</a></li>
 				</ul>
 				
 			</div>	
@@ -51,9 +50,10 @@
 
 
 				<ul>
-					<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-					<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-					<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+					<li><a href="https://www.instagram.com/archive_studio/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.facebook.com/archivestudio.io" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+					<li style="float: right;"><a href="mailto:info@archivestudio.io"><i class="fa fa-envelope" aria-hidden="true"></i></a><li>
+					<!-- <li><i class="fa fa-envelope-square" aria-hidden="true"></i></li> -->
 				</ul>
 			</div>
 		</div>
@@ -62,18 +62,21 @@
 
 </section>
 
-<div class="header-logo" ng-click="ctrl.homeBtn()" ng-controller="AppCtrl as ctrl"><h1>ARCHIVE STUDIO</h1></div>
+<div class="header-logo" ng-click="ctrl.homeBtn()" style="cursor: pointer;" ng-controller="AppCtrl as ctrl"><h1>ARCHIVE STUDIO</h1></div>
 
 <body ng-app="myApp">
 <div ui-view></div>
 
-<section class="footer grey-background">
+<section class="footer grey-background" ng-controller="AppCtrl as ctrl">
 	<ul>
-		<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span></li>
-		<li>ABOUT</li>
-		<li>INQUIRE</li>
-		<li>MOMS & BABES</li>
+		<li><a ng-click="ctrl.homeBtn()"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+	<!-- 	<li>ABOUT</li> -->
+		<li><a ng-click="ctrl.formBtn()">INQUIRE</a></li>
+		<li><a ng-click="ctrl.momsBabesBtn()">MOMS & BABES</a></li>
+		<li style="float:right; font-size: 10px;">4485 CHESSWOOD DR, NORTH YORK, ON M3J 2C3</li>
 	</ul>
+
+
 		<hr>
 		<p>All rights reserved © ARCHIVE STUDIO 2016 · Design & Development by Gee
 </section>

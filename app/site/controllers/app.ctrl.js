@@ -8,7 +8,7 @@
 
 
 
-	function AppCtrl($state, $http, $filter){
+	function AppCtrl($state, $http, $filter, $stateParams){
 		var ctrl = this;
 		ctrl.$http = $http;
 
@@ -56,8 +56,7 @@
 		
 
 
-
-
+		
 
 
 		
