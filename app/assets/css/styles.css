@@ -173,7 +173,7 @@ span {
     margin: 0 auto;
     margin-bottom: 100px;
 }
-.table-schedule td{
+.table-schedule th, .table-schedule td{
     text-align: center;
 }
 .table-home th, .table-home td{
