@@ -30,7 +30,8 @@ app.config(function($httpProvider, $urlRouterProvider, $stateProvider, $location
 	})
 
  
-	// $locationProvider.html5Mode(true);
+	// $locationProvider
+	// .html5Mode(true);
 
 });
 

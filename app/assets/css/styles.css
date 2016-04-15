@@ -105,6 +105,9 @@ html a:hover, html a:visited{
 .table{
     margin-top: 50px;
 }
+.table-home{
+    text-align: left;
+}
 .content-right{
     padding: 20px;
     text-align: justify;
@@ -127,7 +130,9 @@ html a:hover, html a:visited{
 .grey-background {
     background: url(../img/grey-cube.jpg);
 }
-
+span {
+    border-bottom: thin dotted;
+}
 
 
 /*INSTAGRAM*/
@@ -168,8 +173,11 @@ html a:hover, html a:visited{
     margin: 0 auto;
     margin-bottom: 100px;
 }
-.schedule th, td{
+.table-schedule td{
     text-align: center;
+}
+.table-home th, .table-home td{
+    text-align: left;
 }
 
 

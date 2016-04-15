@@ -19,12 +19,16 @@
 		ctrl.instagram = instagram;
 		ctrl.todaysDate = todaysDate;
 		ctrl.hello = "hello";
-
 	
 
 		function todaysDate(){
 			ctrl.date = new Date();
 			ctrl.today = $filter('date')(new Date(), 'MMM/dd');
+			ctrl.todayDate = $filter('date')(new Date(), 'dd');
+			ctrl.mothersDate = 8;
+
+			ctrl.mothersDay = 30 - ctrl.todayDate + ctrl.mothersDate;
+
 		}
 		ctrl.todaysDate();
 
@@ -56,7 +60,7 @@
 		
 
 
-		
+
 
 
 		
