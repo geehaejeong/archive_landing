@@ -50,9 +50,10 @@ html a:hover, html a:visited{
     font-size: 20px;
     font-family: didot;
 }
-.header-right{
+.header-menu{
     padding-top: 10px;
     text-align: right;
+    color: black;
 }
 .header-logo{
     text-align: center;
