@@ -18,10 +18,14 @@ quote {
 
 /*LINKS*/
 html a{
-    color: #6e6a67;
+    color: black;
     cursor: pointer;
 }
-html a:hover, html a:visited{
+html a:hover {
+    text-decoration: none;
+    color: #e33b39;
+}
+html a:visited{
     text-decoration: none;
     color: #6e6a67;
 }
@@ -83,6 +87,9 @@ html a:hover, html a:visited{
     margin-right: 7px;
     font-size: 24px;
     float: right;
+}
+.header-date{
+    margin-top: 70px;
 }
 
 
