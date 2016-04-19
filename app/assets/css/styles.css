@@ -176,7 +176,13 @@ span {
 }
 .table-schedule th, .table-schedule td{
     text-align: center;
+    border: 1px solid #ddd;
 }
+.table-schedule {
+    border-style: 1px solid #ddd;
+    border-color: lightgrey;
+}
+
 .table-home th, .table-home td{
     text-align: left;
 }
