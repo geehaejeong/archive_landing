@@ -153,6 +153,9 @@ span {
     margin-bottom: 60px;
     padding: 2px;
 }
+.instagram a:hover{
+    opacity: 0.8;
+}
 
 /*BOOTSTRAP ADJUSTMENTS*/
 .nopadding {

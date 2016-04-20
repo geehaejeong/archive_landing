@@ -58,7 +58,8 @@
 			ng-repeat="insta in ctrl.instagramImg
 			| limitTo: 4 ">
 
-				<img ng-src="{{insta.images.standard_resolution.url}}">
+				<a class="instagram-link" href="{{insta.link}}" target="_blank"><img ng-src="{{insta.images.standard_resolution.url}}"></a>
+				<!-- {{insta.caption.text | limitTo: 50 }}... -->
 			</div>
 		</div>
 	</div>

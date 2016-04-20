@@ -53,12 +53,12 @@
 
 				for (var i = 0 ; i < 8 ; i++ ){
 					ctrl.instagramImg.push(res.data[i]);
+				console.log(res.data[0].caption.text);
 				}
 			});
 		}
 		ctrl.instagram();
 		
-
 
 
 
