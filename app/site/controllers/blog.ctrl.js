@@ -26,7 +26,7 @@
 
 				for (var i = 0 ; i < 8 ; i++ ){
 					ctrl.tumblrPost.push(res.data[i]);
-				console.log(ctrl.tumblrPost[0]);
+				console.log(ctrl.tumblrPost);
 				}
 			})
 		}
