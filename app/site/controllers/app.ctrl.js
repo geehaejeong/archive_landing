@@ -15,6 +15,7 @@
 		ctrl.formBtn = formBtn;
 		ctrl.homeBtn = homeBtn;
 		ctrl.momsBabesBtn = momsBabesBtn;
+		ctrl.productsBtn = productsBtn;
 
 		ctrl.instagram = instagram;
 		ctrl.todaysDate = todaysDate;
@@ -43,6 +44,11 @@
 		function momsBabesBtn(){
 			$state.go('momsandbabes');
 		}
+		function productsBtn(){
+			$state.go('products');
+		}
+
+
 
 		// INSTAGRAM
 		var endpoint = 'https://api.instagram.com/v1/users/self/media/recent/?access_token=3047809982.c916a8f.c652358bace74d41acbe9715263f440a&callback=JSON_CALLBACK';

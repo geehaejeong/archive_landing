@@ -1,3 +1,5 @@
+/* highlight colour #Fd7771*/
+
 
 html hr{
     border-top: 1px solid #6e6a67;
@@ -10,11 +12,18 @@ html hr{
 body h1 {font-family: didot;}
 body h2 {font-family: proxima-nova;}
 body h3 {font-family: didot;}
-body h4 {font-family: avenir;}
+body h4 {font-family: avenir; color: #Fd7771;}
 quote {
     font-size: 12px;
     font-style: italic;
 }
+
+/*GENERAL*/
+/*.page-title{
+    width: 20%;
+}
+*/
+
 
 /*LINKS*/
 html a{
@@ -23,11 +32,11 @@ html a{
 }
 html a:hover {
     text-decoration: none;
-    color: #e33b39;
+    color: #Fd7771;
 }
 html a:visited{
     text-decoration: none;
-    color: #6e6a67;
+    color: #Fd7771;
 }
 
 /*HEADER*/
@@ -47,7 +56,7 @@ html a:visited{
     position: absolute;
     bottom: 10px;
 }
-.header-right ul{
+.header-right ul, .products-ul{
     padding-top: 10px;
     list-style: none;
     text-align: right;
@@ -196,25 +205,83 @@ span {
 .table-home th, .table-home td{
     text-align: left;
 }
+
+
+
+
+/* PRODUCTS */
+.gallerywall-img{
+    background-image: url(../img/products/gallery_wall.jpg);
+    width: 100%;
+    height: 900px;
+    background-position: center left;
+    background-size: cover;
+}
+.gallerywall-blurb{
+    position: absolute;
+    margin: 180px 0 6px 70px;
+    z-index: 1;
+    width: 400px;
+}
+.products-ul{
+    /*padding-top: 10px;*/
+    list-style: none;
+    text-align: left;
+    font-size: 20px;
+    font-family: didot;
+    padding-left: 0;
+}
+
 .featured-artist{
     margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #Fd7771;
+    padding: 100px 50px;
 }
 .featured-artist-img{
-    background-image: url(../img/momsbabes/nataly.jpg);
+    background-image: url(../img/products/nataly.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: bottom center;
+    margin: 0 auto;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.featured-artist-sample1{
+    background-image: url(../img/products/DONUTS.jpg);
     height: 300px;
     width: 100%;
     background-position: bottom center;
     margin: 0 auto;
     background-size: cover;
 }
-.featured-artist-blurb{
-    background-color:#fff;
-    border:1px solid #000;
-    padding: 40px;
+.featured-artist-sample2{
+    background-image: url(../img/products/FUTZ+4.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: bottom center;
+    margin: 0 auto;
+    background-size: cover;
+}
+.featured-blurb{
+    color: white;
+}
+.featured-blurb p{
+    text-align: center;
+}
+.featured-blurb img{
+    height: 70px;
+    display: inline;
+    margin-left: 10px;
+    text-align: center;
 }
 
-
-
+.featured-artist-blurb{
+    height: 300px;
+    background-color:#fff;
+    /*border:1px solid #000;*/
+    padding: 40px;
+}
 
 
 
