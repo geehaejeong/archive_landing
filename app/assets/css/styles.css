@@ -218,10 +218,8 @@ span {
     background-size: cover;
 }
 .gallerywall-blurb{
-    position: absolute;
-    margin: 180px 0 6px 70px;
-    z-index: 1;
-    width: 400px;
+    margin: 120px 0 6px 70px;
+    z-index: -1;
 }
 .products-ul{
     /*padding-top: 10px;*/
@@ -239,7 +237,6 @@ span {
     padding: 100px 50px;
 }
 .featured-artist-img{
-    background-image: url(../img/products/nataly.jpg);
     height: 300px;
     width: 100%;
     background-position: bottom center;
@@ -247,22 +244,22 @@ span {
     background-size: cover;
     margin-bottom: 30px;
 }
-.featured-artist-sample1{
+
+
+
+
+
+.artist-one{
+    background-image: url(../img/products/nataly.jpg);
+}
+.artist-two{
     background-image: url(../img/products/DONUTS.jpg);
-    height: 300px;
-    width: 100%;
-    background-position: bottom center;
-    margin: 0 auto;
-    background-size: cover;
 }
-.featured-artist-sample2{
+.artist-three{
     background-image: url(../img/products/FUTZ+4.jpg);
-    height: 300px;
-    width: 100%;
-    background-position: bottom center;
-    margin: 0 auto;
-    background-size: cover;
 }
+
+
 .featured-blurb{
     color: white;
 }
@@ -281,6 +278,7 @@ span {
     background-color:#fff;
     /*border:1px solid #000;*/
     padding: 40px;
+    margin-bottom: 30px;
 }
 
 
